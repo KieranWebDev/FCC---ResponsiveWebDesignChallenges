@@ -1,32 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Mulish', sans-serif;
+  padding: 2rem;
+}
+
 h1,
 p {
   text-align: center;
+  color: white;
+}
+p {
+  font-size: 1.2rem;
 }
 form {
-  max-width: 600px;
-  min-width: 400px;
+  max-width: 750px;
+  min-width: 350px;
   width: 80vw;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background-color: rgba(30, 30, 77, 0.881);
+  color: white;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+fieldset {
+  border: none;
+}
+fieldset:first-of-type {
+  padding-top: 2.5rem;
 }
 .form-item-container {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
 }
 
-fieldset input,
+input,
 select,
 textarea {
   width: 100%;
-  min-height: 2.5em;
+  min-height: 2rem;
   margin: 0.5rem 0;
+  border-radius: 4px;
+  /* font-size: 1.1rem; */
+  font-family: 'Mulish';
+  /* padding: 0.5rem; */
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+}
+textarea {
+  /* padding: 0.5rem; */
 }
 
 .inline {
   width: unset;
   margin: 0;
-  margin-right: 0.3rem;
+  margin-right: 0.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  padding: 1rem;
+  font-size: 1.1rem;
 }
 .flex-container label {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+input[type='submit'] {
+  width: 90%;
+  min-height: 2rem;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+  /* font-size: 1.1rem; */
+  font-family: 'Mulish';
+  /* padding: 0.5rem; */
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
 }

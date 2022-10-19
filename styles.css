@@ -1,0 +1,32 @@
+h1,
+p {
+  text-align: center;
+}
+form {
+  max-width: 600px;
+  min-width: 400px;
+  width: 80vw;
+  margin: 0 auto;
+}
+.form-item-container {
+  padding: 0.5rem 1rem;
+}
+
+fieldset input,
+select,
+textarea {
+  width: 100%;
+  min-height: 2.5em;
+  margin: 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0;
+  margin-right: 0.3rem;
+}
+.flex-container label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

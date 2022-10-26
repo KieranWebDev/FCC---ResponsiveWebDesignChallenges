@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 *,
 ::after,
@@ -14,16 +15,17 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
 }
 
 /* nav section */
 
 nav {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 2;
   border-right: 2px solid black;
-  height: 100vh;
+
   min-width: 250px;
+  max-width: 350px;
   flex-direction: column;
   align-items: center;
 
@@ -45,7 +47,7 @@ nav header {
 
 .nav-list li {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0.8rem 0;
   text-align: left;
   border-bottom: 1px solid black;
@@ -70,10 +72,55 @@ nav header {
 } */
 
 main {
-  grid-column: 4 / span 9;
+  grid-column: 3 / span 8;
   padding: 2rem;
 }
 
 .main-section header {
   font-size: 2rem;
+}
+.main-section p {
+  padding-left: 2rem;
+}
+
+.main-section ul {
+  padding-left: 4rem;
+}
+
+.main-section code {
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
+  display: block;
+  margin: 0.5rem auto;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    grid-column: 1 / span 10;
+    border-right: 2px solid black;
+    height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    text-align: center;
+  }
+  .nav-list li {
+    padding: 0.4rem;
+    text-emphasis: center;
+    padding-left: 2rem;
+  }
+
+  main {
+    grid-column: 1 / span 10;
+    padding: 2rem;
+  }
+  .main-section p {
+    padding-left: 0.5rem;
+  }
+
+  .main-section ul {
+    padding-left: 0.5rem;
+  }
 }

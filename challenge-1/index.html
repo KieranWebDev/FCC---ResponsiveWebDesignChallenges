@@ -11,29 +11,29 @@
 
 <body>
 
-    <h1>freeCodeCamp Survey Form</h1>
-    <p><em>Thank you for taking the time to help us improve the platform</em></p>
+    <h1 id="'title">freeCodeCamp Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
 
 
-    <form action='web address'>
+    <form id="survey-form" action='web address'>
         <!-- user info -->
         <fieldset>
             <div class="form-item-container">
-                <label for='name'>Name<input id='name' type='text' name='name' placeholder='Enter your name'
-                        required /></label>
+                <label id='name-label' for='name'>Name<input id='name' type='text' name='name'
+                        placeholder='Enter your name' required /></label>
             </div>
             <div class="form-item-container">
-                <label for='email'>Email<input id='email' type='email' name='Email' placeholder='Enter your email'
-                        required /></label>
+                <label id='email-label' for='email'>Email<input id='email' type='email' name='Email'
+                        placeholder='Enter your email' required /></label>
             </div>
             <div class="form-item-container">
-                <label for='age'>Age(optional)<input id='age' type='number' name='age' placeholder='Age'
-                        min=10 /></label>
+                <label id='number-label' for='number'>Age(optional)<input id='number' type='number' name='age'
+                        placeholder='Age' min=10 max="99" /></label>
             </div>
         </fieldset>
         <fieldset>
             <div class="form-item-container">
-                <label for='current-role'>Which option best describes your current role?<select id='current-role'
+                <label for='dropdown'>Which option best describes your current role?<select id='dropdown'
                         name='fav-feature' required>
                         <option value=''>Select current Role</option>
                         <option value='1'>Student</option>
@@ -116,7 +116,7 @@
                         rows="5" placeholder="Enter your comments here..."></textarea></label>
             </div>
         </fieldset>
-        <input type="submit" value="Submit">
+        <input id='submit' type="submit" value="Submit">
     </form>
 
 

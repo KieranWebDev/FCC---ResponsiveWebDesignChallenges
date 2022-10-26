@@ -1,0 +1,11 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+nav {
+  grid-row: 3;
+  border-right: 1px solid black;
+}
+main {
+  grid-row: 9;
+}

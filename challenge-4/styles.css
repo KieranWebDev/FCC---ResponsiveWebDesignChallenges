@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nav styles */
+
+nav {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 20%;
+  height: 70%;
+}
+ul {
+  width: 30%;
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* header */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+input[type='email'] {
+  width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  padding: 0.4rem;
+}
+
+.submit {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background-color: orange;
+}
+.submit:hover {
+  background-color: rgb(208, 143, 24);
+}
+/* main section */
+
+section {
+  margin: 5rem auto;
+}
+
+.main-grid-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 3rem;
+}
+.icon {
+  grid-column: 1 / span 1;
+
+  margin: 0 auto;
+}
+.fa-fire,
+.fa-truck,
+.fa-battery-full {
+  margin: 0 auto;
+  font-size: 4rem;
+  color: orange;
+}
+
+.feature {
+  grid-column: 2 / span 7;
+}
+.feature h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 0;
+}
+.feature p {
+  margin: 0.2rem 0;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* price section */
+.price-flex-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  gap: 2rem;
+  margin: 0 auto;
+}
+.instrument-box {
+  border: 1px solid black;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.instrument-box h4 {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 8px 8px 0 0;
+}
+
+.instrument-box .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.instrument-box button {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: orange;
+}

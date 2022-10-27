@@ -10,25 +10,32 @@
 </head>
 
 <body>
-    <nav>
-        <img class='logo' src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-            alt="original Trombones">
-        <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#features">How It works</a></li>
-            <li><a href="#features">Pricing</a></li>
-        </ul>
-    </nav>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" class='logo'
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                alt="original Trombones">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <header>
+        <section class="page-top">
+            <img class='logo-header'
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                alt="original Trombones">
             <h1>Handcrafted, home-made masterpieces</h1>
-            <form action="website.com">
-                <input type="email" name="email" placeholder="Enter your email address">
-                <input class="submit" type="submit" value="GET STARTED">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input id="email" type="email" name="email" placeholder="Enter your email address">
+                <input id="submit" class="submit" type="submit" value="GET STARTED">
             </form>
-        </header>
-        <section>
+        </section>
+
+        <section id="features">
             <div class="main-grid-container">
                 <div class="icon"><i class="fa-solid fa-fire"></i></div>
                 <div class="feature">
@@ -54,16 +61,16 @@
 
             </div>
         </section>
-        <section>
 
-            <iframe width="550" height="306" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        <section id='how-it-works'>
+            <iframe id="video" width="550" height="306" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
                 title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
             </iframe>
         </section>
-        <section>
+        <section id="pricing">
             <div class="price-flex-container">
                 <div class="instrument-box">
                     <h4>TENOR TROMBONE</h4>

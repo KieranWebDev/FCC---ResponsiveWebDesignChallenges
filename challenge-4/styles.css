@@ -46,8 +46,16 @@ main {
   width: 90%;
   margin: 0 auto;
 }
+.logo-header {
+  display: block;
+  margin: 0 auto;
+}
 
-header h1 {
+.page-top {
+  margin-top: 80px;
+}
+
+section h1 {
   text-align: center;
 }
 form {
@@ -93,6 +101,7 @@ section {
   margin: auto;
   gap: 3rem;
 }
+
 .icon {
   grid-column: 1 / span 1;
 
@@ -185,4 +194,9 @@ footer {
 footer p {
   display: block;
   margin: 0;
+}
+@media (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
 }

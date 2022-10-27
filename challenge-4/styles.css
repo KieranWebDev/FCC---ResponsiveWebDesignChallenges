@@ -12,6 +12,10 @@ nav {
   align-items: center;
   padding: 0.2rem;
   margin: 0 auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: white;
 }
 
 img {
@@ -122,16 +126,18 @@ iframe {
 .price-flex-container {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 100%;
   gap: 2rem;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .instrument-box {
   border: 1px solid black;
   padding: 0;
   text-align: center;
   font-size: 1.2rem;
-  width: 30%;
+  max-width: 33%;
+  min-width: 25%;
   border-radius: 8px;
 }
 
@@ -153,5 +159,30 @@ iframe {
 .instrument-box button {
   padding: 0.5rem 1rem;
   font-weight: 600;
-  color: orange;
+  font-size: 1.1rem;
+  background-color: orange;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+/* footer */
+footer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #ddd;
+  margin: 0 auto;
+  padding-right: 2rem;
+}
+
+.footer-links {
+  justify-content: flex-end;
+  font-size: 1rem;
+  gap: 1rem;
+}
+footer p {
+  display: block;
+  margin: 0;
 }
